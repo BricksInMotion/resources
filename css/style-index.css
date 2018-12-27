@@ -1,0 +1,10 @@
+.half {
+  display: flex;
+  justify-content: center;
+}
+.half > section { width: 50%; }
+
+@media (max-width: 768px) {
+  .half { flex-direction: column; }
+  .half > section { width: 100%; }
+}
