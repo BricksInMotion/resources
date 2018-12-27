@@ -115,11 +115,6 @@ a:hover, a:active {
   color: var(--text-color-links);
 }
 
-blockquote {
-  padding-left: 0.6em;
-  border-left: 3px solid var(--text-color-header);
-}
-
 main {
   flex: 1 0 auto;
   width: 80%;
@@ -139,6 +134,8 @@ section h3 { margin: 0; }
   justify-content: center;
 }
 .half > section { width: 50%; }
+
+.bbu { text-decoration: underline; }
 
 @media (max-width: 768px) {
   .half { flex-direction: column; }
