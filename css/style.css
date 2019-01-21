@@ -133,7 +133,10 @@ section h3 { margin: 0; }
   display: flex;
   justify-content: center;
 }
-.half > section { width: 50%; }
+.half > section {
+  width: 50%;
+  line-height: 1.3;
+}
 
 .bbu { text-decoration: underline; }
 
