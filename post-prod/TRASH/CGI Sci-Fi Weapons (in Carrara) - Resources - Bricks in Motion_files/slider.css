@@ -1,0 +1,213 @@
+/*	Default stylesheet for the Carpe Slider
+	By Tom Hermansson Snickars                 
+	2005-12-17 version 1.5
+	Copyright CARPE Design                     
+	carpe.ambiprospect.com
+*/
+*.carpe_horizontal_slider_display_combo {
+	clear: left;
+	margin: 0;
+}
+*.carpe_vertical_slider_display_combo {
+	float: left;
+	margin: 0;
+}
+*.carpe_horizontal_slider_track {
+	background-color: #f6fafb;
+	/*color: #f00;*/
+	width: 159px;
+	height: 20px;
+	float: left;
+	margin: 0;
+	line-height: 0px;
+	font-size: 0px;
+	text-align: left;
+	padding: 4px;
+	border: 1px solid;
+	border-right: 0px solid;
+	/*border-color: #b4cfdd;*/
+	border-color: #b4cfdd #f6fafb #b4cfdd #b4cfdd;
+}
+*.carpe_horizontal_slider_track *.carpe_slider_slit {
+	background-color: #3c5b6b;
+	width: 105px;
+	height: 1px;
+	margin: 8px 4px 2px 4px;
+	line-height: 0px;
+	position: absolute;
+	z-index: 1;
+	border: 1px solid;
+	border-color: #b4cfdd;
+}
+*.carpe_horizontal_slider_track *.carpe_slider {
+	width: 18px;
+	/*background-color: #b4cfdd;*/
+	background-image:url('/../images/sliderbutton.png');
+	/*color: #f00;*/
+	position: relative;
+	margin: 0;
+	height: 18px;
+	z-index: 1;
+	line-height: 0px;
+	font-size: 0px;
+	text-align: left;
+	border: 0px solid;
+	border-color:  #f6fafb #3c5b6b #3c5b6b #f6fafb;
+}
+*.carpe_vertical_slider_track *.carpe_slider {
+	width: 20px;
+	background-color: #666;
+	color: #333;
+	position: relative;
+	margin: 0;
+	height: 8px;
+	z-index: 1;
+	line-height: 0px;
+	font-size: 0px;
+	text-align: left;
+	border: 2px solid;
+	border-color: #999 #333 #333 #999;
+}
+*.carpe_slider_display_holder {
+	background-color: #f6fafb;
+	color: #3c5b6b;
+	width: 34px;
+	margin: 0;
+	float: left;
+	padding: 0 2px 0 0;
+	height: 28px;
+	text-align: left;
+	border: 1px solid;
+	border-left: 0px solid;
+	border-color: #b4cfdd #b4cfdd #b4cfdd #f6fafb;
+	
+}
+.carpe_slider_display {
+	display: none;
+}
+.read_warn {
+	color: #b4cfdd;
+	vertical-align: middle;
+	padding-top: 4px;
+	font: 10px "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-weight: bold;
+}
+
+/*
+CSS for select buttons
+*/
+
+span.select {
+	position: absolute;
+	width: 180px; /* With the padding included, the width is 190 pixels: the actual width of the image. */
+	height: 23px;
+	padding: 0 24px 0 8px;
+	padding-top: 5px;
+	color: #3c5b6b;
+	font: 13px "Lucida Grande", Lucida, Verdana, sans-serif;
+	background: url(../../images/select.gif) no-repeat;
+	border: 1px solid;
+	border-color:#b4cfdd;
+	background-position: center right;
+	overflow: hidden;
+}
+span.selectD {
+	position: absolute;
+	width: 21px; /* With the padding included, the width is 190 pixels: the actual width of the image. */
+	height: 23px;
+	padding: 0 24px 0 8px;
+	padding-top: 5px;
+	color: #3c5b6b;
+	font: 13px "Lucida Grande", Lucida, Verdana, sans-serif;
+	background: url(../../images/select.gif) no-repeat;
+	border: 1px solid;
+	border-color:#b4cfdd;
+	background-position: center right;
+	overflow: hidden;
+}
+span.selectM {
+	position: absolute;
+	width: 66px; /* With the padding included, the width is 190 pixels: the actual width of the image. */
+	height: 23px;
+	padding: 0 24px 0 8px;
+	padding-top: 5px;
+	color: #3c5b6b;
+	font: 13px "Lucida Grande", Lucida, Verdana, sans-serif;
+	background: url(../../images/select.gif) no-repeat;
+	border: 1px solid;
+	border-color:#b4cfdd;
+	background-position: center right;
+	overflow: hidden;
+}
+span.selectY {
+	position: absolute;
+	width: 28px; /* With the padding included, the width is 190 pixels: the actual width of the image. */
+	height: 23px;
+	padding: 0 24px 0 8px;
+	padding-top: 5px;
+	color: #3c5b6b;
+	font: 13px "Lucida Grande", Lucida, Verdana, sans-serif;
+	background: url(../../images/select.gif) no-repeat;
+	border: 1px solid;
+	border-color:#b4cfdd;
+	background-position: center right;
+	overflow: hidden;
+}
+input.styled {
+	display: none;
+}
+select.styled {
+	position: relative;
+	width: 214px;
+	height: 28px;
+	opacity: 0;
+	/*filter: alpha(opacity=0);*/
+	z-index: 3;
+}
+input.styledD {
+	display: none;
+}
+select.styledD {
+	position: relative;
+	width: 55px;
+	height: 28px;
+	opacity: 0;
+	/*filter: alpha(opacity=0);*/
+	z-index: 3;
+}
+input.styledM {
+	display: none;
+}
+select.styledM {
+	position: relative;
+	width: 100px;
+	height: 28px;
+	opacity: 0;
+	/*filter: alpha(opacity=0);*/
+	z-index: 3;
+}
+input.styledY {
+	display: none;
+}
+select.styledY {
+	position: relative;
+	width: 62px;
+	height: 28px;
+	opacity: 0;
+	/*filter: alpha(opacity=0);*/
+	z-index: 3;
+}
+table.center3part {
+	border-spacing:0px;
+	padding:0px;
+	width:250px;
+	height: 30px;
+	vertical-align: top;
+}
+.center3part  td{
+	text-align: center;
+}
+.padSelect td{
+	height: 33px;
+	vertical-align: top;
+}

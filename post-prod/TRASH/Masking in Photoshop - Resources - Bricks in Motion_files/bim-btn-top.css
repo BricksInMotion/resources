@@ -1,0 +1,27 @@
+.btn-top {
+	position: fixed;
+	bottom: 0.95em;
+	right: 2.5em;
+	cursor: pointer;
+}
+
+.btn-top div {
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+
+	font-weight: 600;
+	text-align: center;
+	color: #3989c3;
+}
+
+.btn-top img:hover,
+.btn-top img:focus,
+.btn-top img:active {
+	opacity: 0.8;
+}
+
+@media screen and (max-width: 950px) {
+	.btn-top { display: none; }
+}

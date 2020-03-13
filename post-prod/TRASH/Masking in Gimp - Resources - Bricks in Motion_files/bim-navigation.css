@@ -1,0 +1,235 @@
+:root {
+  --primary-font: "IBM Plex Sans", sans-serif;
+  --header-font: "Raleway", var(--primary-font);
+  --bim-red: #df3e5d;
+  --bim-yellow: #feb033;
+  --bim-blue: #00a3b8;
+  --bim-orange: #FFB034;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#fakeheader {
+  height: 4.5em;
+  width: 100%;
+  position: relative;
+  background-color: #e1e1e1;
+}
+
+.hashlink {
+    height: 4.5em;
+    margin-top: 4.5em;
+    visibility: hidden;
+}
+
+.main-nav {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #071019;
+  min-height: 4em;
+  padding-top: 0.5em;
+}
+
+/* BiM logo and text link */
+.main-nav a {
+  text-decoration: none;
+  margin-left: 19%;
+  display: flex;
+  align-items: center;
+}
+
+#BimLogoText {
+  color: white;
+  font-weight: 700;
+  font-family: var(--header-font);
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-left: 0.5em;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  margin-left: auto;
+  padding-right: 19%;
+}
+
+.main-nav li {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+/* Quick access nav links */
+.main-nav li a {
+  color: #FFB034;
+  font-family: var(--primary-font);
+  font-size: 1.4em;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: 0px 0 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  margin-left: 13%;
+  border-bottom: 2px solid transparent;
+}
+
+.main-nav li a:hover {
+  color: #cce8f3 !important;
+}
+
+/* doesnt work because only forums is set to current?? */
+/*
+.main-nav li a.current {
+  color: #cce8f3;
+  border-bottom-color: var(--bim-orange);
+}
+*/
+
+#welcometext {
+  background-image: url(https://www.bricksinmotion.com/images/site/brickbackground.jpg);
+  background-size: cover;
+  background-position: right;
+  width: auto;
+/*  height: 12em;*/
+/*  padding: 0 4em;*/
+    padding: 2em 0;
+}
+
+#welcometext h1 {
+  color: #FFB034;
+  font-family: var(--header-font);
+  margin: auto;
+  text-align: center;
+  padding-bottom: 0.5em;
+  text-shadow: 0 0 1em black;
+  cursor: default;
+}
+
+#welcometext p {
+  color: white;
+  font-family: var(--primary-font);
+  width: 45%;
+  min-width: 18em;
+  text-align: center;
+  text-shadow: 0 0 1em black;
+  margin: 1em auto;
+}
+
+#sign-buttons {
+  text-align: center;
+  padding: 2em 0 0 0;
+}
+
+#signup-button, #signin-button {
+  color: white;
+  width: 5em;
+  padding: 0.5em;
+  text-align: center;
+  margin: 0 0.5em;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-family: var(--header-font);
+}
+
+#signup-button {
+  background-color: #0297ff;
+}
+
+#signin-button {
+  background-color: #ff0031;
+}
+
+#signup-button:hover, #signin-button:hover {
+  opacity: 0.9;
+}
+
+.dottedline {margin: auto; width: 20%; border-top: 1px dotted #e5e5e5;}
+
+.green .header,
+.green.search,
+.green .middle,
+.green .footer {
+  background-image: none;
+}
+
+.module {
+  width: auto;
+  margin: 5px auto;
+}
+
+.module.green {
+  font-family: var(--header-font);
+  background-color: var(--bim-red);
+  border-radius: 4px;
+}
+
+.green .header {
+  all: revert;
+  height: 2em;
+  position: relative;
+  top: 6px;
+
+  background: none;
+
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase; 
+  text-indent: unset;
+}
+
+.green .middle .input input {
+  width: auto;
+  margin: 0.3em auto;
+  padding: 0.5em 0.3em;
+  color: #000;
+  background: none;
+  background-color: #fff;
+}
+
+.green .middle #loginbutton {
+  all: revert;
+  display: block;
+  margin: 0.5em auto;
+  padding: 0.2em 3em;
+  border: none;
+  background: none;
+
+  background-color: white;
+  color: black;
+
+  font-family: var(--header-font);
+  text-indent: unset;
+}
+
+@media screen and (max-width: 1264px){
+  .main-nav a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-nav ul {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #BimLogoText {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 626px){
+  #fakeheader {
+    height: 8em;
+  }
+}
